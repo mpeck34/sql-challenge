@@ -1,9 +1,14 @@
+-- Drop tables if they exist
+
 drop table if exists dept_emp cascade;
 drop table if exists dept_manager cascade;
 drop table if exists salaries cascade;
 drop table if exists titles cascade;
 drop table if exists departments cascade;
 drop table if exists employees cascade;
+
+
+-- Tables created in this order because of dependencies
 
 create table titles (
     title_id varchar(255) not null,

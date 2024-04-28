@@ -1,3 +1,7 @@
+/*
+
+All tables manually imported in this order due to dependencies
+
 COPY titles FROM 'titles.csv' WITH (FORMAT csv, HEADER true);
 COPY employees FROM 'employees.csv' WITH (FORMAT csv, HEADER true);
 COPY departments FROM 'departments.csv' WITH (FORMAT csv, HEADER true);
@@ -5,6 +9,9 @@ COPY dept_emp FROM 'dept_emp.csv' WITH (FORMAT csv, HEADER true);
 COPY dept_manager FROM 'dept_manager.csv' WITH (FORMAT csv, HEADER true);
 COPY salaries FROM 'salaries.csv' WITH (FORMAT csv, HEADER true);
 
+*/
+
+-- View tables
 
 select * from departments;
 select * from dept_emp;
